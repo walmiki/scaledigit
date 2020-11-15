@@ -1,0 +1,273 @@
+@font-face {
+  src: url(../fonts/Poppins-Light.ttf);
+  font-family: poppins;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: poppins;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar {
+  background-color: #52057b;
+  color: #fff;
+  height: 70px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.logo {
+  margin-left: -29px;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  font-size: 18px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.showcase {
+  height: 70vh;
+  background-color: #52057b;
+  color: #fff;
+  position: relative;
+}
+.showcase::before, .showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  background: white;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: #333;
+  margin: 10px;
+}
+
+.showcase__form {
+  position: relative;
+  top: 60px;
+  height: 400px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+.showcase__form h2 {
+  font-weight: 700;
+}
+.showcase__form p {
+  margin-top: 0;
+}
+
+.showcase__form .form-control {
+  margin: 30px 0;
+}
+
+.showcase__form input[type=text],
+.showcase__form input[type=email],
+.showcase__form input[type=phone] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase__form input:focus {
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: #52057b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  transform: scale(0.97);
+}
+
+.btn_outline {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.stats {
+  padding-top: 92px;
+}
+.stats .container {
+  padding-right: 13px;
+  padding-left: 18px;
+}
+.stats .container .card__container {
+  display: flex;
+}
+.stats .container .card__container .card {
+  margin-right: 20px;
+  border-left: 1px solid #52057b;
+  border-bottom: 1px solid #52057b;
+}
+
+.about .container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+.about .container p {
+  width: 691px;
+  margin: 0 auto 1%;
+}
+
+.bg_dark,
+.bg_dark a {
+  background-color: #52057b;
+  color: #fff;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.footer .grid {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer .grid .socials a {
+  margin-right: 5px;
+}
+
+.whatwedo {
+  margin-bottom: 5%;
+}
+.whatwedo h3 {
+  font-size: 103px;
+  font-weight: 1000;
+  font-family: heading, serif;
+}
+.whatwedo ul li {
+  background: #fff;
+  display: inline-block;
+  margin: 6px 2%;
+  padding: 8px 10px 8px 45px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px -5px #666;
+  position: relative;
+  font-size: 14px;
+  animation: floating 5s infinite;
+  animation-timing-function: ease;
+}
+.whatwedo ul li span {
+  width: 35px;
+  background: #000;
+  height: 100%;
+  float: left;
+  margin: 0 10px 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.whatwedo ul li:nth-child(2n+1) span {
+  background: #52057b;
+}
+
+/*# sourceMappingURL=styles.css.map */
